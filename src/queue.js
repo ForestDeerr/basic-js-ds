@@ -13,9 +13,13 @@ const { NotImplementedError } = require('../lib/errors');
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
 class Queue {
+  constructor() {
+    this.first = null;
+    this.last = null;
+  }
+
   getUnderlyingList() {
-    // Remove line below and write your code here
-    throw new NotImplementedError('Not implemented');
+    return this.first;
   }
 
   enqueue(/* value */) {
@@ -32,3 +36,6 @@ class Queue {
 module.exports = {
   Queue
 };
+
+
+
